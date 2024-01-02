@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feladat</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <style>
+        html, body{
+            height:100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer{
+            height: 70px;
+        }
+   
+        div.fs-2 > a > i{
+            color: black
+        }
+
+    /* div.fs-3 > a > i{
+    color: black
+    } */
+
+    /* innen jön:
+    https://www.youtube.com/watch?v=45QSuJaHEss
+    */
+    .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    /* innen jön:
+    https://www.youtube.com/watch?v=45QSuJaHEss
+    */
+    .navbar-toggler{
+        border: 1px solid white
+    }
+
+    .overflow{
+        overflow: auto
+    }
+
+    </style>
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md bg-dark ">
+    <div class="container-fluid">
+        <a class="navbar-brand col-4 text-white" href="#">Carbon Cloud Dashboard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container">
+                <div class="row align-items-center bg-inf">
+                    <!-- Searxch box -->
+                    <div class="col-7 col-lg-6">
+                        <!-- Searxch box -->
+                        <form class="row">
+                        <input class="form-control" type="search" placeholder="Search resources...">
+                        </form>
+                    </div>
+                    <!-- Ikonok -->
+                    <div class="col-5 col-lg-6 d-flex justify-content-end">
+                        <div class="fs-3">
+                            <a href="" class="text-white"><i class="bi bi-pencil-fill"></i></a>
+                            <a href="" class="text-white"><i class="bi bi-bell-fill" ></i></a>
+                            <a href="" class="text-white"><i class="bi bi-person-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Left side icon bar -->
+        <aside class="d-none d-md-block col bg-info" 
+        style="flex: 0">
+        
+            <div class="d-flex fs-2 flex-column align-items-center bg-dange ">
+                <a href="#"><i class="bi bi-list-task"></i></a>
+                <a href="#"><i class="bi bi-house-door-fill"></i></a>
+                <a href="#"><i class="bi bi-cloud-fill"></i></a>
+                <a href="#"><i class="bi bi-database-fill"></i></a>
+                <a href="#"><i class="bi bi-code-slash"></i></a>
+                <a href="#"><i class="bi bi-people-fill"></i></a>
+                <a href="#"><i class="bi bi-arrow-clockwise"></i></a>
+                <a href="#"><i class="bi bi-plus-lg"></i></a>
+            </div>
+        </aside>
+        <!-- Fő tartalom -->
+        <main class="col-12 col-md-11" 
+            style="flex: 1">
+            <!-- Első sor -->
+            <div class="row row-cols-1 row-cols-md-3 bg-succes ">
+                <!-- Első sor Első oszlop -->
+                <div class="col  mt-3  bg-warnin   ">
+                    <!-- Első kártya -->
+                    <div class="card bg-light h-100 ">
+                        <div class="card-body ">
+                          <h1 class="display-6 text-dark">AI</h1>
+                          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum iure voluptatem, facere nemo minima veniam non odit odio exercitationem et ad eaque natus, nisi praesentium doloremque? Optio deserunt possimus facilis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus inventore eligendi facilis dignissimos,</p>
+                          <a href="#" class="btn btn-light btn-outline-primary " >Get Started <i class="ms-4 bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Első sor Második oszlop -->
+                <div class="col  mt-3  bg-dange  ">
+                    <div class="card bg-light h-100 ">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h1 class="display-6 text-dark">Infrastructure</h1>
+                            <p class="card-text ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus inventore eligendi facilis dignissimos,</p>
+                            <a href="#" class="btn btn-light btn-outline-primary
+                            mt-auto" >Get Started <i class="ms-4 bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Első sor Harmaik oszlop -->
+                <div class="col  mt-3  bg-inf  ">
+                    <div class="card bg-light h-100 ">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h1 class="display-6 text-dark">Services</h1>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus inventore eligendi facilis dignissimos,</p>
+                            <a href="#" class="btn btn-light btn btn-outline-primary 
+                            mt-auto" >Get Started <i class="ms-4 bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Második sor -->
+            <div class="row  bg-secondar">
+                <!-- Második sor Első oszlop -->
+                <div class="col-12 col-md-8  mt-3 bg-warnin  ">
+                    <div class="card text-bg-dark h-100 ">
+                        <img src="images/kep1.jpg" class="card-img h-100" alt="...">
+                        <div class="card-body card-img-overlay d-flex flex-column align-items-start overflow">
+                            <h1 class="display-6 text-light">Smart Grid</h1>
+                            <p class="card-text text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi accusantium maxime illo sit nam commodi. Fugiat quia itaque nesciunt ab minima. Ad dignissimos ab at iusto beatae iure, soluta similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore doloribus voluptas quibusdam aperiam, odio esse inventore aliquid omnis voluptatibus commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, id repellat asperiores laudantium sit placeat soluta labore voluptatum eum ab qui animi neque quo? Corrupti, sed hic! Autem, quibusdam libero. Minus officiis nisi, obcaecati quasi repellat ullam fugiat?</p>
+                            <a href="#" class="btn btn-primary
+                            mt-auto" >Get Started <i class="ms-4 bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Második sor Második oszlop -->
+                <div class="col-12 col-md-4 mt-3 bg-succes  ">
+                    <div class="card bg-light h-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h1 class="display-6 text-dark">Security</h1>
+                            <p class="card-text">Lorem i eilis dignissimos,</p>
+                            <a href="#" class="btn btn-light btn btn-outline-primary
+                            mt-auto" >Get Started <i class="ms-4 bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Harmadik sor -->
+            <div class="row bg-primar">
+                <!-- Harmadik sor Első oszlop -->
+                <div class="col-12 col-md-4  mt-3  bg-succes  ">
+                    <div class="card bg-light h-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                        <h1 class="display-6 text-dark">Services</h1>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eius distinctio minus maxime earum obcaecati, modi porro odio ipsam laboriosam laudantium aperiam rerum sit minima asperiores reiciendis expedita architecto consectetur!</p>
+                        <a href="#" class="btn btn-light btn btn-outline-primary
+                        mt-auto" >Get Started <i class="ms-4 bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Harmadik sor Második oszlop -->
+                <div class="col-12 col-md-8  mt-3 bg-dange  ">
+                    <div class="card text-bg-dark h-100">
+                        <img src="images/kep2.png" class="card-img h-100" alt="...">
+                        <div class="card-body card-img-overlay d-flex flex-column align-items-start overflow">
+                            <h1 class="display-6 text-light">Fast Data Transfer</h1>
+                            <p class="card-text text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate optio aperiam dolores ea aut animi, amet fugit repudiandae a ullam facilis tempora beatae consequatur sint quasi corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. At sunt expedita, eveniet aspernatur vero quia asperiores illum distinctio sed repudiandae assumenda earum non aliquid, tenetur iusto accusamus dignissimos ad iste!  Repellendus, omnis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <a href="#" class="btn btn-primary
+                            mt-auto" >Get Started <i class="ms-4 bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-secondary">
+        </footer>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
